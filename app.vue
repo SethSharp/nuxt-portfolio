@@ -14,7 +14,7 @@ const links = computed(() => [
   {
     href: '/projects',
     name: 'Projects',
-    active: currentRoute.value.match(/^\/projects\/?$/),
+    active: currentRoute.value === '/projects'
   },
   {
     href: '/experience',
