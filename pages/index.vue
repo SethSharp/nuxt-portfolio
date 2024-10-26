@@ -25,7 +25,7 @@ useSeoMeta({
       <div class="md:w-1/2 p-2">
         <BodyWrapper>
           <img
-              class="object-cover mx-auto w-52 sm:w-96 mt-8 sm:mt-0"
+              class="object-cover mx-auto w-52 sm:w-96 mt-8 sm:mt-0 rounded"
               src="~/assets/images/profile-picture.png"
               alt="Profile Picture for Seth Sharp"
           />
