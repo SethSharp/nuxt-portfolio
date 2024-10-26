@@ -4,9 +4,6 @@ useHead({
   meta: [
     { name: 'description', content: 'This is the portfolio site for Seth Sharp' }
   ],
-  bodyAttrs: {
-    class: 'test'
-  },
 })
 </script>
 
