@@ -8,10 +8,10 @@ defineProps<{
 
 <template>
   <footer class=" border-t-2 border-primary-500 z-20">
-    <div class="p-4 md:flex md:justify-between font-semibold space-y-3">
+    <div class="p-1 sm:p-4 md:flex md:justify-between font-semibold space-y-3">
       <div class="space-y-3">
-        <div class="space-x-4 text-center">
-          <NavigationLink v-for="link in links" :link="link" />
+        <div class="space-x-2 sm:space-x-4 text-center">
+          <NavigationResponsiveLink v-for="link in links" :link="link" />
         </div>
 
         <p class="text-sm my-auto leading-5 text-gray-400 text-center md:text-left">
