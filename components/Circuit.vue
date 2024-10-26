@@ -1,7 +1,7 @@
 <script setup lang="ts">
 withDefaults(
     defineProps<{
-      fill: string
+      fill?: string
     }>(), {
       fill: '#1f2937'
     }
@@ -10,7 +10,7 @@ withDefaults(
 
 <template>
   <div
-      class="absolute w-full min-h-24 object-cover [mask-image:radial-gradient(55rem_55rem_at_center,white,transparent)]">
+      class="absolute w-full min-h-24 object-cover h-screen overflow-hidden [mask-image:radial-gradient(55rem_35rem_at_center,white,transparent)]">
     <svg
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
       <path :fill="fill"
