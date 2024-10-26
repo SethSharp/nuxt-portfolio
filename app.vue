@@ -24,9 +24,14 @@ const links = computed(() => [
     active: currentRoute.value === '/projects'
   },
   {
-    href: '/experience',
-    name: 'Experience',
-    active: currentRoute.value === '/experience'
+    href: '/experiences',
+    name: 'Experiences',
+    active: currentRoute.value === '/experiences'
+  },
+  {
+    href: '/contact',
+    name: 'Contact',
+    active: currentRoute.value === '/contact'
   },
 ])
 </script>
