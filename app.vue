@@ -12,6 +12,10 @@ useHead({
 const route = useRoute()
 const currentRoute = computed(() => route.path)
 
+watch(currentRoute, () => {
+  console.log(currentRoute.value)
+})
+
 const links = computed(() => [
   {
     href: '/',
@@ -21,17 +25,17 @@ const links = computed(() => [
   {
     href: '/projects',
     name: 'Projects',
-    active: currentRoute.value === '/projects'
+    active: currentRoute.value.match(/^\/projects\/?$/),
   },
   {
     href: '/experiences',
     name: 'Experiences',
-    active: currentRoute.value === '/experiences'
+    active: currentRoute.value.match(/^\/experiences\/?$/),
   },
   {
     href: '/contact',
     name: 'Contact',
-    active: currentRoute.value === '/contact'
+    active: currentRoute.value.match(/^\/contact\/?$/),
   },
 ])
 </script>
