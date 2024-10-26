@@ -12,8 +12,8 @@ jobs:
     environment: production
 
     env:
-      S3_BUCKET: nuxt-portfolio
-      CLOUDFRONT_DISTRIBUTION_ID: E2B1XDZ2GJVVG2
+      S3_BUCKET: sethsharp.dev
+      CLOUDFRONT_DISTRIBUTION_ID: E279RQHWZHC12A
 
     steps:
       - uses: actions/checkout@v4
