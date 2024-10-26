@@ -52,6 +52,6 @@ const links = computed(() => [
       </section>
     </main>
 
-    <MainFooter :links="links" />
+    <MainFooter />
   </div>
 </template>
