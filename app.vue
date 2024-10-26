@@ -19,12 +19,12 @@ const links = computed(() => [
   {
     href: '/experience',
     name: 'Experience',
-    active: currentRoute.value.match(/^\/experience\/?$/),
+    active: currentRoute.value === '/experience'
   },
   {
     href: '/contact',
     name: 'Contact',
-    active: currentRoute.value.match(/^\/contact\/?$/),
+    active: currentRoute.value === '/contact'
   },
 ])
 
