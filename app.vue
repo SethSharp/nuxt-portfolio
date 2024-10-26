@@ -29,11 +29,17 @@ const links = computed(() => [
 ])
 </script>
 
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+
 <template>
-  <div class="font-sans antialiased bg-white dark:bg-gray-800">
+  <div class="font-sans antialiased bg-gray-900">
     <header>
       <NavigationBar :links="links" />
     </header>
+
+    <Circuit />
 
     <main>
       <section class="min-h-screen relative mt-4">

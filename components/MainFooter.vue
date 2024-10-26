@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import { type Link } from "~/types"
-
-defineProps<{
-  links: Link[]
-}>()
-
 </script>
 
 <template>
