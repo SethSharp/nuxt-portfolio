@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     },
   },
 
+  generate: {
+    routes: [
+      '/projects',
+    ]
+  },
+
   app: {
     pageTransition: {
       name: 'page',
