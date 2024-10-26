@@ -6,7 +6,6 @@ useSeoMeta({
 </script>
 
 <template>
-
   <div class="w-full divide-y">
     <section class="md:flex md:mt-14 pb-12 md:pb-24 gap-y-12">
       <div class="md:w-1/2 md:mt-16 mx-auto md:ml-12 z-10">

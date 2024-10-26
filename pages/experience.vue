@@ -53,11 +53,9 @@ useSeoMeta({
 
 <template>
   <div>
-    <div class="text-white max-w-fit">
-      <HeadingsPage>
-        My Experiences
-      </HeadingsPage>
-    </div>
+    <HeadingsPage>
+      My Experiences
+    </HeadingsPage>
 
     <BodyWrapper>
       <div class="leading-loose mt-12">

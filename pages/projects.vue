@@ -7,12 +7,9 @@ useSeoMeta({
 
 <template>
   <div>
-    <div class="md:mt-14 max-w-fit">
-      <HeadingsPage>
-        My Projects
-      </HeadingsPage>
-    </div>
-
+    <HeadingsPage>
+      My Projects
+    </HeadingsPage>
     <div class="mt-4 space-y-8">
       <BodyWrapper>
         <ProjectsHabitTracker/>
