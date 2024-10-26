@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: 'Contact: Seth Sharp',
+  description: 'Information to get in contact with me'
+})
 </script>
 
 <template>

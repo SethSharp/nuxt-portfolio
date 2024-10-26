@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Projects by Seth Sharp',
+  title: 'Projects: Seth Sharp',
   description: 'Here I reflect on my most impressive projects which I am proud to say, \'I did that\'!'
 })
 </script>

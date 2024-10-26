@@ -44,6 +44,11 @@ const timeline = [
     icon: UserGroupIcon,
   }
 ]
+
+useSeoMeta({
+  title: 'Experience: Seth Sharp',
+  description: 'Over my time in the industry I reflect on these experiences - to share to others about to go on their journey as developers.'
+})
 </script>
 
 <template>

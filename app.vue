@@ -2,13 +2,6 @@
 import { useRoute } from "vue-router"
 import MainFooter from "~/components/MainFooter.vue"
 
-useHead({
-  title: 'Seth Sharp Portfolio Site',
-  meta: [
-    { name: 'description', content: 'This is the portfolio site for Seth Sharp' }
-  ],
-})
-
 const route = useRoute()
 const currentRoute = computed(() => route.path)
 
@@ -24,9 +17,9 @@ const links = computed(() => [
     active: currentRoute.value.match(/^\/projects\/?$/),
   },
   {
-    href: '/experiences',
-    name: 'Experiences',
-    active: currentRoute.value.match(/^\/experiences\/?$/),
+    href: '/experience',
+    name: 'Experience',
+    active: currentRoute.value.match(/^\/experience\/?$/),
   },
   {
     href: '/contact',
@@ -34,6 +27,11 @@ const links = computed(() => [
     active: currentRoute.value.match(/^\/contact\/?$/),
   },
 ])
+
+useSeoMeta({
+  title: "Seth Sharp",
+  description: "Hey I am Seth Sharp, a Software Developer located in SE QLD on the Gold Coast. I have been a Software Developer over the last couple of years and have developed skills in multiple libraries and frameworks to push my best work"
+})
 </script>
 
 <template>
