@@ -3,7 +3,7 @@ import { useRoute } from "vue-router"
 import MainFooter from "~/components/MainFooter.vue"
 
 useHead({
-  title: 'Seth Sharp Portfolio',
+  title: 'Seth Sharp Portfolio Site',
   meta: [
     { name: 'description', content: 'This is the portfolio site for Seth Sharp' }
   ],
