@@ -12,10 +12,8 @@ useSeoMeta({
     </HeadingsPage>
 
     <BodyWrapper>
-      <p class="text-gray-300 my-6">
-        Please feel free to contact me via the options below, or fill out the online form.
-        I look
-        forward to hearing from you!
+      <p class="text-gray-300 my-6 max-w-96">
+        Please feel free to get in contact with one of the options below, I look forward to connecting with you!
       </p>
 
       <div class="flex gap-4 text-slate-500">
