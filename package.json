@@ -13,6 +13,7 @@
     "@heroicons/vue": "^2.1.5",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.2",
+    "postcss-selector-parser": "^7.0.0",
     "vue": "latest",
     "vue-router": "latest"
   },
