@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Seth Sharp",
+  description: "Hey I am Seth Sharp, a Software Developer located in SE QLD on the Gold Coast. I have been a Software Developer over the last couple of years and have developed skills in multiple libraries and frameworks to push my best work"
+})
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 </style>

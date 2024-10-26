@@ -27,11 +27,6 @@ const links = computed(() => [
     active: currentRoute.value === '/contact'
   },
 ])
-
-useSeoMeta({
-  title: "Seth Sharp",
-  description: "Hey I am Seth Sharp, a Software Developer located in SE QLD on the Gold Coast. I have been a Software Developer over the last couple of years and have developed skills in multiple libraries and frameworks to push my best work"
-})
 </script>
 
 <template>
