@@ -12,10 +12,6 @@ useHead({
 const route = useRoute()
 const currentRoute = computed(() => route.path)
 
-watch(currentRoute, () => {
-  console.log(currentRoute.value)
-})
-
 const links = computed(() => [
   {
     href: '/',
