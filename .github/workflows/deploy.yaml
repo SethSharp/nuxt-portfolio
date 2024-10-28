@@ -29,7 +29,10 @@ jobs:
       - name: Build nuxt.js application
         run: |
           npm ci
-          npm run build
+
+      - name: Generate nuxt.js application
+        run: |
+          npm run generate
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
