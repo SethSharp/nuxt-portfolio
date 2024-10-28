@@ -28,10 +28,6 @@ defineProps<{
           <IconsLinkedIn class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50"/>
         </a>
 
-        <a href="mailto:sesharp@outlook.com">
-          <IconsMail class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50"/>
-        </a>
-
         <a href="https://x.com/seth_sharp_01" target="_blank">
           <IconsTwitter class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50" />
         </a>
