@@ -31,10 +31,6 @@ jobs:
           npm ci
           npm run build
 
-      - name: Generate nuxt.js application
-        run: |
-          npm run generate
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -44,5 +40,5 @@ jobs:
 
       - name: Deploy to AWS
         run: |
-          aws s3 cp .output/public s3://${S3_BUCKET} --recursive --region=ap-southeast-2 --no-progress --cache-control "no-store, no-cache, must-revalidate, max-age=0"
+          aws s3 cp .output/public s3://${S3_BUCKET} --recursive --region=ap-southeast-2 --no-progress --exact-timestamps
           aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
