@@ -29,6 +29,7 @@ jobs:
       - name: Build nuxt.js application
         run: |
           npm ci
+          npm run build
 
       - name: Generate nuxt.js application
         run: |
