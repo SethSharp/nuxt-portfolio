@@ -41,4 +41,4 @@ jobs:
       - name: Deploy to AWS
         run: |
           aws s3 cp .output/public s3://${S3_BUCKET} --recursive --region=ap-southeast-2 --no-progress
-          aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
+          aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*" "/contact/*"
