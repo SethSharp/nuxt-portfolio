@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <footer class=" border-t-2 border-primary-500 z-20">
+  <footer class=" border-t-2 border-primary z-20">
     <div class="p-1 sm:p-4 md:flex md:justify-between font-semibold space-y-3">
       <div class="space-y-3">
         <div class="space-x-2 sm:space-x-4 text-center">
@@ -20,16 +20,16 @@ defineProps<{
       </div>
 
       <div class="flex gap-4 justify-center text-slate-500">
-        <a href="https://github.com/SethSharp" target="_blank">
-          <IconsGitHub class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50"/>
+        <a class="hover:text-gray-700" href="https://github.com/SethSharp" target="_blank">
+          <IconsGitHub class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50"/>
         </a>
 
-        <a href="https://www.linkedin.com/in/seth-sharp/" target="_blank">
-          <IconsLinkedIn class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50"/>
+        <a class="hover:text-gray-700" href="https://www.linkedin.com/in/seth-sharp/" target="_blank">
+          <IconsLinkedIn class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50"/>
         </a>
 
-        <a href="https://x.com/seth_sharp_01" target="_blank">
-          <IconsTwitter class="size-8 transition ease-in-out delay-0 hover:-translate-y-1 duration-50" />
+        <a class="hover:text-gray-700" href="https://x.com/seth_sharp_01" target="_blank">
+          <IconsTwitter class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50" />
         </a>
       </div>
     </div>

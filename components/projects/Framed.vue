@@ -2,7 +2,7 @@
   <div>
     <div class="mb-8">
       <h2 class="text-xl md:text-2xl lg:text-4xl font-mono text-gr text-white">
-        <a href="https://www.framedjustforyou.com.au" class="transition hover:text-primary-500">
+        <a href="https://www.framedjustforyou.com.au" class="transition hover:text-primary">
           Framed Just For You
         </a>
       </h2>

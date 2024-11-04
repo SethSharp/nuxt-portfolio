@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@sethsharp/lumuix": "^1.0.0-alpha.15",
     "nuxt": "^3.13.2",
     "postcss-selector-parser": "^7.0.0",
     "vue": "latest",

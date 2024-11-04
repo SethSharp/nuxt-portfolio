@@ -92,14 +92,14 @@ useSeoMeta({
                 <div>
                   <p class="text-sm text-gray-200 pt-1">
                     {{ event.content }}
-                    <span class="font-medium text-primary-400">
+                    <span class="font-medium text-primary/90">
                       {{ event.target }}
                     </span>
                   </p>
                   <p class="text-sm mt-4 text-gray-400">{{ event?.description }}</p>
                 </div>
 
-                <div class="whitespace-nowrap text-right text-sm text-primary-600">
+                <div class="whitespace-nowrap text-right text-sm text-primary">
                   {{ event.date }}
                 </div>
               </div>

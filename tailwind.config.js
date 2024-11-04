@@ -1,7 +1,9 @@
-import colors from 'tailwindcss/colors'
+import { preset } from '@sethsharp/lumuix'
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  presets: [preset],
+
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -28,21 +30,6 @@ export default {
         typing: 'typing 1s steps(30, end) forwards, blinking 1s infinite',
         reveal: 'typing 0.7s steps(50, end) forwards',
       },
-
-      colors: {
-        primary: {
-          50: colors.teal[50],
-          100: colors.teal[100],
-          200: colors.teal[200],
-          300: colors.teal[300],
-          400: colors.teal[400],
-          500: colors.teal[500],
-          600: colors.teal[600],
-          700: colors.teal[700],
-          800: colors.teal[800],
-          900: colors.teal[900],
-        },
-      }
     },
   },
   plugins: [],

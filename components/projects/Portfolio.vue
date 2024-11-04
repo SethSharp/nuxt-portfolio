@@ -21,7 +21,7 @@
         The Blog system is something that I am proud of and allows me to reflect on experiences throughout my
         career. The blog management
         system is built in a Vue/Inertia environment utilising the <a href="https://github.com/SethSharp/BlogCrud"
-                                                                      class="text-primary-600 hover:text-primary-500 transition font-medium">
+                                                                      class="text-primary hover:text-primary/80 transition font-medium">
         sethsharp/blog-crud </a> composer package. It has a fully integrated TipTap editor allowing me to to do
         virtually everything I need with my content - with a custom image upload system I can integrate images to
         help improve my
