@@ -5,6 +5,7 @@ export default {
   presets: [preset],
 
   content: [
+    "./node_modules/@sethsharp/lumuix/dist/*.js",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -12,6 +13,7 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
+
   theme: {
     extend: {
       keyframes: {
@@ -32,6 +34,7 @@ export default {
       },
     },
   },
+
   plugins: [],
 }
 
