@@ -25,7 +25,7 @@ const open = ref(false)
 
       <SheetContent side="top">
         <div
-            class="rounded w-full flex justify-start shadow-2xl p-3 space-y-2 flex-col">
+            class="flex space-y-2 flex-col">
           <NavigationLink v-for="link in links" :link="link" />
         </div>
       </SheetContent>
