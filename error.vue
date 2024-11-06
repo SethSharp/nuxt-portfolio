@@ -1,15 +1,17 @@
 <script setup lang="ts">
+import { Button } from '@sethsharp/lumuix'
 const error = useError()
+
+const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
   <div class="flex items-center justify-center h-screen">
     <div class="text-center flex flex-col space-y-4">
       <h1 class="text-5xl text-primary"> {{ error.message }} </h1>
-      <p class="text-lg text-gray-600">Looks like you've entered a black hole.</p>
-      <NuxtLink to="/" class="bg-primary w-fit mx-auto hover:bg-primary/80 text-white font-bold py-2 px-4 mt-6 rounded">
-        Warp Back Home
-      </NuxtLink>
+      <Button variant="primary" @click="handleError" class="mt-6">
+        Go Home
+      </Button>
     </div>
   </div>
 </template>

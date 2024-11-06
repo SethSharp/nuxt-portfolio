@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Separator } from "@sethsharp/lumuix"
+
 useSeoMeta({
   title: "Seth Sharp",
   description: "Hey I am Seth Sharp, a Software Developer located in SE QLD on the Gold Coast. I have been a Software Developer over the last couple of years and have developed skills in multiple libraries and frameworks to push my best work"
@@ -6,7 +8,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-full divide-y">
+  <div class="w-full">
     <section class="md:flex md:mt-14 pb-12 md:pb-24 gap-y-12">
       <div class="md:w-1/2 md:mt-16 mx-auto md:ml-12 z-10">
         <div class="sm:mt-8 mx-auto w-fit">
@@ -27,6 +29,8 @@ useSeoMeta({
         </BodyWrapper>
       </div>
     </section>
+
+    <Separator />
 
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
@@ -49,6 +53,8 @@ useSeoMeta({
       </section>
     </BodyWrapper>
 
+    <Separator />
+
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
         <HeadingsSecondary>My Specialisations</HeadingsSecondary>
@@ -64,6 +70,8 @@ useSeoMeta({
         </div>
       </section>
     </BodyWrapper>
+
+    <Separator />
 
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
