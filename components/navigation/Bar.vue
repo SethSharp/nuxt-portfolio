@@ -6,8 +6,6 @@ import { type Link } from "~/types"
 defineProps<{
   links: Link[]
 }>()
-
-const open = ref(false)
 </script>
 
 <template>
@@ -19,15 +17,12 @@ const open = ref(false)
     </div>
 
     <Sheet>
-      <SheetTrigger class="sm:hidden" as-child>
+      <SheetTrigger class="sm:hidden">
         <Bars3Icon class="size-10 text-gray-500 hover:bg-gray-800"/>
       </SheetTrigger>
 
-      <SheetContent side="top">
-        <div
-            class="flex space-y-2 flex-col">
-          <NavigationLink v-for="link in links" :link="link" />
-        </div>
+      <SheetContent side="top" class="flex space-y-2 flex-col">
+        <NavigationLink v-for="link in links" :link="link" />
       </SheetContent>
     </Sheet>
   </nav>
