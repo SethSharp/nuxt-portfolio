@@ -42,7 +42,7 @@
 
       <div>
         <img
-            class="object-cover rounded-xl shadow mx-auto shadow-gray-400"
+            class="object-cover rounded-xl shadow mx-auto"
             src="~/assets/images/projects/framed/home.png"
             alt="Framed Just For You Home Page"
         />
