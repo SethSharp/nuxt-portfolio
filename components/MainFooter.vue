@@ -20,16 +20,16 @@ defineProps<{
       </div>
 
       <div class="flex gap-4 justify-center text-slate-500">
-        <a class="hover:text-gray-700" href="https://github.com/SethSharp" target="_blank">
-          <IconsGitHub class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50"/>
+        <a class="hover:scale-105 hover:animate-pulse" href="https://github.com/SethSharp" target="_blank">
+          <IconsGitHub class="size-8 transition ease-in-out delay-0 duration-50"/>
         </a>
 
-        <a class="hover:text-gray-700" href="https://www.linkedin.com/in/seth-sharp/" target="_blank">
-          <IconsLinkedIn class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50"/>
+        <a class="hover:scale-105 hover:animate-pulse" href="https://www.linkedin.com/in/seth-sharp/" target="_blank">
+          <IconsLinkedIn class="size-8 transition ease-in-out delay-0 duration-50"/>
         </a>
 
-        <a class="hover:text-gray-700" href="https://x.com/seth_sharp_01" target="_blank">
-          <IconsTwitter class="size-8 transition ease-in-out delay-0 hover:-translate-y-0.5 duration-50" />
+        <a class="hover:scale-105 hover:animate-pulse" href="https://x.com/seth_sharp_01" target="_blank">
+          <IconsTwitter class="size-8 transition ease-in-out delay-0 duration-50" />
         </a>
       </div>
     </div>
