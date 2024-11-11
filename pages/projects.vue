@@ -24,7 +24,7 @@ useSeoMeta({
       </BodyWrapper>
 
       <Separator />
-      
+
       <BodyWrapper>
         <ProjectsPortfolio/>
       </BodyWrapper>
