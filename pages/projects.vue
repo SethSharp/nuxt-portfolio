@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Separator } from "@sethsharp/lumuix"
+
 useSeoMeta({
   title: 'Projects: Seth Sharp',
   description: 'Here I reflect on my most impressive projects which I am proud to say, \'I did that\'!'
@@ -15,10 +17,14 @@ useSeoMeta({
         <ProjectsHabitTracker/>
       </BodyWrapper>
 
+      <Separator />
+
       <BodyWrapper>
         <ProjectsFramed/>
       </BodyWrapper>
 
+      <Separator />
+      
       <BodyWrapper>
         <ProjectsPortfolio/>
       </BodyWrapper>
