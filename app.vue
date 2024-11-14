@@ -35,11 +35,13 @@ const links = computed(() => [
 
 <template>
   <div class="font-sans antialiased bg-gray-900">
-    <header>
+    <header class="sticky z-10 top-0 bg-gray-900">
       <NavigationBar :links="links" />
     </header>
 
-    <Circuit />
+    <div>
+      <Circuit />
+    </div>
 
     <main>
       <section class="min-h-screen relative mt-4">

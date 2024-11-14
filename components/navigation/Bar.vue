@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <nav class="h-fit sm:py-4 p-2">
+  <nav class="h-fit sm:py-4 p-2 z-10">
     <div class="h-full gap-6 justify-center hidden sm:flex">
       <div class="my-auto space-x-4">
         <NavigationLink v-for="link in links" :link="link" />
