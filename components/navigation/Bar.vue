@@ -21,8 +21,10 @@ defineProps<{
         <Bars3Icon class="size-10 text-gray-500 hover:bg-gray-800"/>
       </SheetTrigger>
 
-      <SheetContent side="top" class="flex space-y-2 flex-col">
-        <NavigationLink v-for="link in links" :link="link" />
+      <SheetContent side="top">
+        <SheetClose class="flex space-y-2 flex-col">
+          <NavigationLink v-for="link in links" :link="link" />
+        </SheetClose>
       </SheetContent>
     </Sheet>
   </nav>
