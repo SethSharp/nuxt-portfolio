@@ -14,6 +14,7 @@ jobs:
     env:
       S3_BUCKET: sethsharp.dev
       CLOUDFRONT_DISTRIBUTION_ID: E279RQHWZHC12A
+      NPM_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
