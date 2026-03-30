@@ -1,86 +1,169 @@
 <script setup lang="ts">
+import { Github, Linkedin, ExternalLink } from "lucide-vue-next"
 import { Separator } from "@codinglabsau/gooey"
 
+import laravelIcon from '~/assets/images/icons/laravel-icon.png'
+import vueIcon from '~/assets/images/icons/vue-icon.png'
+import twIcon from '~/assets/images/icons/tw-icon.png'
+import lwIcon from '~/assets/images/icons/lw-icon.png'
+
 useSeoMeta({
-  title: "Seth Sharp",
-  description: "Hey I am Seth Sharp, a Software Developer located in SE QLD on the Gold Coast. I have been a Software Developer over the last couple of years and have developed skills in multiple libraries and frameworks to push my best work"
+  title: "Seth Sharp - Software Developer",
+  description: "Software Developer based in Adelaide, building scalable web applications with Laravel, Vue, and AWS."
 })
+
+const tech = [
+  { name: 'Laravel', icon: laravelIcon },
+  { name: 'Vue.js', icon: vueIcon },
+  { name: 'Tailwind CSS', icon: twIcon },
+  { name: 'Livewire', icon: lwIcon },
+]
+
+const highlights = [
+  {
+    title: 'Live Event Streaming',
+    description: 'Led the design and continued ownership of a live event streaming feature on AWS IVS - powering real-time auctions for thousands of concurrent viewers.',
+    tag: 'AWS IVS',
+  },
+  {
+    title: 'Payment Integration',
+    description: 'Architected the platform\'s first Stripe Checkout integration with webhook-driven event processing for payment verification.',
+    tag: 'Stripe',
+  },
+  {
+    title: 'Performance Optimisation',
+    description: 'Led a performance initiative in response to user-reported latency during high-traffic live events - identified bottlenecks, broke work into atomic improvements, and delivered incrementally.',
+    tag: 'Optimisation',
+  },
+]
 </script>
 
 <template>
-  <div class="w-full">
-    <section class="md:flex md:mt-14 pb-12 md:pb-24 gap-y-12">
-      <div class="md:w-1/2 md:mt-16 mx-auto md:ml-12">
-        <div class="sm:mt-8 mx-auto w-fit">
-          <HeadingsMain>
-            <h1>Seth Sharp</h1>
-            <h2 class="pt-2 font-light">Software</h2>
-            <h2 class="pt-2 font-light">Developer</h2>
-          </HeadingsMain>
+  <div class="space-y-24">
+    <!-- Hero -->
+    <section class="pt-8 md:pt-16">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+          <div>
+            <p class="text-primary font-mono text-sm mb-2">G'day, I'm</p>
+            <HeadingsMain>
+              <h1>Seth Sharp</h1>
+            </HeadingsMain>
+            <p class="text-xl md:text-2xl text-muted-foreground font-light mt-4">
+              Software Developer
+            </p>
+          </div>
+
+          <p class="text-muted-foreground leading-relaxed max-w-lg">
+            Passionate about building web applications with Laravel, Vue, and AWS.
+            Currently developing real-time e-commerce and live event systems at
+            <span class="text-foreground font-medium">Coding Labs</span>.
+          </p>
+
+          <div class="flex items-center gap-4 pt-2">
+            <a
+              href="https://github.com/SethSharp"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition"
+            >
+              <Github class="size-4" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/seth-sharp/"
+              target="_blank"
+              class="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition"
+            >
+              <Linkedin class="size-4" />
+              LinkedIn
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="md:w-1/2 p-2">
-        <BodyWrapper>
+
+        <div class="shrink-0">
           <img
-              class="object-cover mx-auto w-52 sm:w-96 mt-8 sm:mt-0 rounded"
-              src="~/assets/images/profile-picture.png"
-              alt="Profile Picture for Seth Sharp"
+            class="w-48 sm:w-64 rounded-xl ring-2 ring-border shadow-lg"
+            src="~/assets/images/profile-picture.png"
+            alt="Seth Sharp"
           />
-        </BodyWrapper>
+        </div>
       </div>
     </section>
 
     <Separator />
 
-    <BodyWrapper>
-      <section class="py-12 md:py-24 text-center">
-        <HeadingsSecondary>About me</HeadingsSecondary>
-        <div class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
+    <!-- About -->
+    <section class="space-y-6">
+      <HeadingsSecondary>About</HeadingsSecondary>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            I currently live on the Gold Coast and loving every moment. I love everything outdoors such as
-            4WDing, camping or fishing. I also enjoy gaming from time to time to have a nice break from my busy life.
+            I'm a software developer with over three years of professional experience designing, building
+            and maintaining scalable web applications. I work across the full development lifecycle - from
+            architecture and implementation through to testing, deployment, and production support.
           </p>
-          <br />
           <p>
-            Among work and play, I still love to build personal projects using the skills I have learnt over the years.
-            Testing them in different applications - each setting new objectives and teaching new skills.
+            Outside of work, I'm into 4WDing, camping, and fishing. I also build side projects to test
+            new ideas and keep learning - it's how I stay sharp.
           </p>
-          <div class="md:flex justify-center mt-12 space-y-4 md:space-y-0 gap-4 md:w-1/2 mx-auto">
-            <img src="~/assets/images/about/4wd.png" alt="4WD track in Ormeau" class="size-52 object-cover mx-auto rounded-md" />
-            <img src="~/assets/images/about/lookout.png" alt="Fraser Island Sand Dune on the West Side" class="size-52 object-cover mx-auto rounded-md" />
-          </div>
         </div>
-      </section>
-    </BodyWrapper>
+        <div class="flex flex-col gap-4">
+          <img
+            src="~/assets/images/about/4wd.png"
+            alt="4WD track"
+            class="w-full h-32 object-cover rounded-lg ring-1 ring-border"
+          />
+          <img
+            src="~/assets/images/about/lookout.png"
+            alt="Fraser Island lookout"
+            class="w-full h-32 object-cover rounded-lg ring-1 ring-border"
+          />
+        </div>
+      </div>
+    </section>
 
     <Separator />
 
-    <BodyWrapper>
-      <section class="py-12 md:py-24 text-center">
-        <HeadingsSecondary>My Specialisations</HeadingsSecondary>
-        <p class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
-          I have been a Junior Software Developer over the last couple of years specialising in Laravel development.
-          I have developed skills in multiple libraries and frameworks to build custom web applications for clients.
-        </p>
-        <div id="technology-icons" class="flex gap-8 justify-center mt-12">
-          <IconsLaravel />
-          <IconsVue />
-          <IconsLivewire />
-          <IconsTailwind />
+    <!-- Tech Stack -->
+    <section class="space-y-6">
+      <HeadingsSecondary>Stack</HeadingsSecondary>
+      <div class="flex flex-wrap gap-6">
+        <div
+          v-for="item in tech"
+          :key="item.name"
+          class="flex items-center gap-3 px-4 py-3 rounded-lg bg-card ring-1 ring-border hover:ring-primary/50 transition"
+        >
+          <img :src="item.icon" :alt="item.name" class="size-8" />
+          <span class="font-mono text-sm text-foreground">{{ item.name }}</span>
         </div>
-      </section>
-    </BodyWrapper>
+      </div>
+    </section>
 
     <Separator />
 
-    <BodyWrapper>
-      <section class="py-12 md:py-24 text-center">
-        <HeadingsSecondary>Aspiration</HeadingsSecondary>
-        <p class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
-          One of my major aspirations is to start my own business. I am eager to leverage my skills and
-          experience to create innovative solutions and build a successful venture.
-        </p>
-      </section>
-    </BodyWrapper>
+    <!-- Highlights -->
+    <section class="space-y-6">
+      <div class="flex items-center justify-between">
+        <HeadingsSecondary>Highlights</HeadingsSecondary>
+        <NuxtLink
+          to="/experience"
+          class="text-sm font-mono text-muted-foreground hover:text-primary transition inline-flex items-center gap-1"
+        >
+          View all
+          <ExternalLink class="size-3" />
+        </NuxtLink>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          v-for="highlight in highlights"
+          :key="highlight.title"
+          class="p-6 rounded-lg bg-card ring-1 ring-border hover:ring-primary/50 transition space-y-3"
+        >
+          <span class="text-xs font-mono text-primary">{{ highlight.tag }}</span>
+          <h3 class="text-foreground font-medium">{{ highlight.title }}</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed">{{ highlight.description }}</p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>

@@ -19,7 +19,7 @@
 
           <div class="mt-6">
             <div>
-              The process involved a step-by-step approach to conceptualize the vision for the site — a more
+              The process involved a step-by-step approach to conceptualize the vision for the site - a more
               modern
               design that effectively showcased the range of services offered by Framed Just For You.
               Since

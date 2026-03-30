@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Bars3Icon } from "@heroicons/vue/24/outline"
-import {Sheet, SheetClose, SheetContent, SheetTrigger} from "@codinglabsau/gooey"
+import { Menu } from "lucide-vue-next"
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@codinglabsau/gooey"
 import { type Link } from "~/types"
 
 defineProps<{
@@ -9,27 +9,32 @@ defineProps<{
 </script>
 
 <template>
-  <nav class="h-fit sm:py-4 p-2 z-10">
-    <div class="h-full gap-6 justify-center hidden sm:flex">
-      <div class="my-auto space-x-4">
-        <NavigationLink v-for="link in links" :link="link" />
-      </div>
+  <nav class="flex items-center justify-between py-3 px-4 sm:px-0">
+    <NuxtLink to="/">
+      <img
+        src="~/assets/images/profile-picture.png"
+        alt="Seth Sharp"
+        class="size-8 rounded-full ring-1 ring-border hover:ring-primary transition"
+      />
+    </NuxtLink>
+
+    <div class="hidden sm:flex items-center gap-6">
+      <NavigationLink v-for="link in links" :key="link.href" :link="link" />
       <NavigationModeToggle />
     </div>
 
-    <Sheet>
-      <div class="sm:hidden flex justify-between items-center">
+    <div class="sm:hidden flex items-center gap-2">
+      <NavigationModeToggle />
+      <Sheet>
         <SheetTrigger>
-          <Bars3Icon class="size-10 text-muted-foreground hover:text-foreground"/>
+          <Menu class="size-6 text-muted-foreground hover:text-foreground transition" />
         </SheetTrigger>
-        <NavigationModeToggle />
-      </div>
-
-      <SheetContent side="top">
-        <SheetClose class="flex space-y-2 flex-col">
-          <NavigationLink v-for="link in links" :link="link" />
-        </SheetClose>
-      </SheetContent>
-    </Sheet>
+        <SheetContent side="top">
+          <SheetClose class="flex flex-col gap-3 pt-4">
+            <NavigationLink v-for="link in links" :key="link.href" :link="link" />
+          </SheetClose>
+        </SheetContent>
+      </Sheet>
+    </div>
   </nav>
 </template>

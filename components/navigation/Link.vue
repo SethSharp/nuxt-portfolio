@@ -7,8 +7,11 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to="link.href"
-     class="font-normal font-mono text-muted-foreground transition hover:text-foreground text-lg sm:text-2xl" :class="{'!text-primary' : link.active}">
+  <NuxtLink
+    :to="link.href"
+    class="font-mono text-sm text-muted-foreground transition hover:text-foreground"
+    :class="{ '!text-primary font-medium': link.active }"
+  >
     {{ link.name }}
   </NuxtLink>
 </template>

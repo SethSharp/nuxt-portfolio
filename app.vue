@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { useDark } from "@vueuse/core"
 import { useRoute } from "vue-router"
-import MainFooter from "~/components/MainFooter.vue"
+
+useDark()
 
 const route = useRoute()
 const currentRoute = computed(() => route.path)
@@ -12,14 +14,14 @@ const links = computed(() => [
     active: currentRoute.value === '/'
   },
   {
-    href: '/projects',
-    name: 'Projects',
-    active: currentRoute.value === '/projects'
-  },
-  {
     href: '/experience',
     name: 'Experience',
     active: currentRoute.value === '/experience'
+  },
+  {
+    href: '/projects',
+    name: 'Projects',
+    active: currentRoute.value === '/projects'
   },
   {
     href: '/contact',
@@ -29,42 +31,40 @@ const links = computed(() => [
 ])
 </script>
 
+<template>
+  <div class="font-sans antialiased bg-background text-foreground min-h-screen">
+    <header class="sticky z-10 top-0 bg-background/80 backdrop-blur-md border-b border-border/50">
+      <div class="max-w-5xl mx-auto">
+        <NavigationBar :links="links" />
+      </div>
+    </header>
+
+    <Circuit />
+
+    <main class="relative">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
+        <NuxtLayout>
+          <NuxtPage />
+        </NuxtLayout>
+      </div>
+    </main>
+
+    <MainFooter />
+  </div>
+</template>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 </style>
 
-<template>
-  <div class="font-sans antialiased bg-background text-foreground">
-    <header class="sticky z-10 top-0 bg-background">
-      <NavigationBar :links="links" />
-    </header>
-
-    <div>
-      <Circuit />
-    </div>
-
-    <main>
-      <section class="min-h-screen relative mt-4">
-        <div class="md:flex md:w-4/5 mx-4 md:mx-auto mt-2 sm:mt-8 mb-12">
-          <NuxtLayout>
-            <NuxtPage />
-          </NuxtLayout>
-        </div>
-      </section>
-    </main>
-
-    <MainFooter :links="links" />
-  </div>
-</template>
-
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  filter: blur(1rem);
+  transform: translateY(8px);
 }
 </style>

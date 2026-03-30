@@ -1,112 +1,139 @@
 <script setup lang="ts">
-import {
-  BuildingOfficeIcon,
-  UsersIcon,
-  NewspaperIcon,
-  UserIcon,
-  UserGroupIcon
-} from "@heroicons/vue/24/outline"
-
-const timeline = [
-  {
-    content: 'Applied to',
-    target: 'Coding Labs work placement',
-    description: 'This was handled via a partnership with Griffith University in my final trimester of university.',
-    date: 'Aug 22',
-    icon: BuildingOfficeIcon,
-  },
-  {
-    content: '3 month placement',
-    target: 'learning Laravel, Tailwind and Blade',
-    description: 'First off we worked on an internal bootcamp course which took us over the basics of Laravel, Eloquent, and Blade. This had us working on a portfolio website which would be used in our work placement program at Griffith, where we would reflect on our experience here. Toward the end of the placement we worked on a new internal project which saw us getting thrown into Vue and learning on the spot. Vue would soon become my favourite to work with.',
-    date: 'Sep 22',
-    icon: UsersIcon,
-  },
-  {
-    content: 'Offered',
-    target: 'employment',
-    description: 'Employment was offered on a 2-day basis, which soon became 4-day employment throughout 2023.',
-    date: 'Nov 22',
-    icon: NewspaperIcon,
-  },
-  {
-    content: 'Full time hours & owner',
-    target: 'of an internal project during Q4 2023',
-    description: 'This was a big point, where I was moved to 5 days of work and entrusted on a project as its owner for Q4.',
-    date: 'Oct 23',
-    icon: UserIcon,
-  },
-  {
-    content: 'Continued Development on',
-    target: 'Internal Projects',
-    description: '',
-    date: 'Feb 24',
-    icon: UserGroupIcon,
-  }
-]
+import { Separator } from "@codinglabsau/gooey"
+import { Briefcase, GraduationCap, Code } from "lucide-vue-next"
 
 useSeoMeta({
-  title: 'Experience: Seth Sharp',
-  description: 'Over my time in the industry I reflect on these experiences - to share to others about to go on their journey as developers.'
+  title: 'Experience - Seth Sharp',
+  description: 'Over three years of professional experience building scalable web applications at Coding Labs and beyond.'
 })
+
+const roles = [
+  {
+    company: 'Coding Labs',
+    title: 'Software Developer',
+    period: 'November 2022 - Present',
+    location: 'Adelaide, SA',
+    icon: Briefcase,
+    projects: [
+      {
+        name: 'Live Platforms',
+        subtitle: 'E-commerce live auction platform',
+        points: [
+          'Led the design, development and continued ownership of the platform\'s live event streaming feature using AWS Interactive Video Service - from initial architecture through to deployment, maintenance and ongoing feature expansion.',
+          'Architected and built the platform\'s first Stripe Checkout integration, implementing the complete payment flow including webhook-driven event processing for payment verification.',
+          'Led a performance optimisation initiative in response to user-reported latency during high-traffic live events - identified bottlenecks in data loading and rendering, broke the work into atomic improvements delivered incrementally.',
+          'Developed and maintained comprehensive automated test suites across critical payment, bidding and registration flows.',
+          'Mentored another developer through the live streaming implementation, providing technical direction and code review.',
+        ],
+        tags: ['Laravel', 'Vue', 'AWS IVS', 'Stripe', 'Algolia', 'Livewire'],
+      },
+      {
+        name: 'Plane Support',
+        subtitle: 'Engineering job management platform',
+        points: [
+          'Led the migration from a legacy component library to a modern framework, improving maintainability and developer experience.',
+          'Designed and implemented a granular role and permission system, replacing a basic role structure to give administrators fine-grained control over feature access.',
+          'Managed ongoing platform maintenance under a service-level agreement, including monthly dependency updates, bug fixes and client support.',
+          'Contributed to commercialisation planning, collaborating with stakeholders to define the implementation roadmap for a multi-tenant product offering.',
+        ],
+        tags: ['Laravel', 'Vue', 'Inertia'],
+      },
+    ],
+  },
+  {
+    company: 'Framed Just For You',
+    title: 'Lead Developer',
+    period: 'June 2023 - Present',
+    location: 'Remote',
+    icon: Code,
+    projects: [
+      {
+        name: 'Business Website',
+        subtitle: 'Solo-built client website - end-to-end ownership',
+        points: [
+          'Independently managing the entire project - from initial client consultation and requirements gathering through to design, development, deployment and ongoing support.',
+          'Built and maintain the full technology stack including AWS hosting, Route53 domain configuration and SSL via ACM.',
+          'Sole point of contact for the client, handling all technical decisions, feature requests and infrastructure.',
+        ],
+        tags: ['Laravel', 'Tailwind', 'AWS'],
+      },
+    ],
+  },
+]
 </script>
 
 <template>
-  <div>
-    <HeadingsPage>
-      My Experiences
-    </HeadingsPage>
+  <div class="space-y-16">
+    <HeadingsPage>Experience</HeadingsPage>
 
-    <BodyWrapper>
-      <div class="leading-loose mt-12">
-        <h1 class="text-2xl font-medium text-muted-foreground"> Bachelor of Computer Science (2020-2023) </h1>
+    <!-- Professional Experience -->
+    <div class="space-y-16 mt-8">
+      <div v-for="role in roles" :key="role.company" class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="mt-1 p-2 rounded-lg bg-primary/10 text-primary">
+            <component :is="role.icon" class="size-5" />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-foreground">{{ role.company }}</h2>
+            <p class="text-muted-foreground">
+              {{ role.title }} &middot; {{ role.period }}
+            </p>
+            <p class="text-sm text-muted-foreground">{{ role.location }}</p>
+          </div>
+        </div>
 
-        <p class="mt-3 text-foreground">
-          Straight after high school I went to Griffith University to study Computer Science, majoring in
-          Software Development.
-          Here is where I learnt a lot about algorithms, data structures and project structures. I dipped my
-          toes in plenty
-          of different areas such as AI, web development and general programming best practises and skills.
-          GPA: 5.44
-        </p>
-      </div>
-    </BodyWrapper>
-
-    <BodyWrapper>
-      <div class="leading-loose mt-12">
-        <h1 class="text-2xl font-medium text-muted-foreground"> Coding Labs (2022-Present) </h1>
-
-        <p class="mt-3 text-foreground">
-          Coding Labs is a Laravel agency based on the Gold Coast. I have been apart of this team for nearly 2
-          years
-          and have learn so much.
-        </p>
-      </div>
-      <div class="flow-root mt-6 text-foreground">
-        <ul role="list" class="-mb-8">
-          <li v-for="event in timeline" class="flex flex-col">
-            <div class="relative flex space-x-3 my-2">
-              <component :is="event.icon" class="size-8 p-0.5 rounded-md flex items-center justify-center" />
-
-              <div class="md:flex min-w-0 flex-1 justify-between sm:space-x-4 pl-2">
-                <div>
-                  <p class="text-sm text-foreground pt-1">
-                    {{ event.content }}
-                    <span class="font-medium text-primary/90">
-                      {{ event.target }}
-                    </span>
-                  </p>
-                  <p class="text-sm mt-4 text-muted-foreground">{{ event?.description }}</p>
-                </div>
-
-                <div class="whitespace-nowrap text-right text-sm text-primary">
-                  {{ event.date }}
-                </div>
-              </div>
+        <div class="ml-14 space-y-10">
+          <div v-for="project in role.projects" :key="project.name" class="space-y-4">
+            <div>
+              <h3 class="text-lg font-medium text-foreground">{{ project.name }}</h3>
+              <p class="text-sm text-muted-foreground">{{ project.subtitle }}</p>
             </div>
-          </li>
-        </ul>
+
+            <ul class="space-y-3">
+              <li
+                v-for="(point, i) in project.points"
+                :key="i"
+                class="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-border hover:border-primary/50 transition"
+              >
+                {{ point }}
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tag in project.tags"
+                :key="tag"
+                class="text-xs font-mono px-2 py-1 rounded-md bg-primary/10 text-primary"
+              >
+                {{ tag }}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </BodyWrapper>
+    </div>
+
+    <Separator />
+
+    <!-- Education -->
+    <section class="space-y-6">
+      <div class="flex items-start gap-4">
+        <div class="mt-1 p-2 rounded-lg bg-primary/10 text-primary">
+          <GraduationCap class="size-5" />
+        </div>
+        <HeadingsSecondary>Education</HeadingsSecondary>
+      </div>
+      <div class="ml-14">
+        <div class="p-6 rounded-lg bg-card ring-1 ring-border space-y-2">
+          <h3 class="font-medium text-foreground">Bachelor of Computer Science</h3>
+          <p class="text-muted-foreground">Griffith University &middot; 2020 - 2024</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs font-mono px-2 py-1 rounded-md bg-primary/10 text-primary">Software Development Major</span>
+            <span class="text-xs font-mono px-2 py-1 rounded-md bg-primary/10 text-primary">Data Structures & Algorithms</span>
+            <span class="text-xs font-mono px-2 py-1 rounded-md bg-primary/10 text-primary">Applied AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>

@@ -1,35 +1,23 @@
 <script setup lang="ts">
-import { type Link } from "~/types"
-
-defineProps<{
-  links: Link[]
-}>()
+import { Github, Linkedin, Twitter } from "lucide-vue-next"
 </script>
 
 <template>
-  <footer class=" border-t-2 border-primary z-20">
-    <div class="p-1 sm:p-4 md:flex md:justify-between font-semibold space-y-3">
-      <div class="space-y-3">
-        <div class="space-x-2 sm:space-x-4 text-center">
-          <NavigationResponsiveLink v-for="link in links" :link="link" />
-        </div>
+  <footer class="border-t border-border/50 mt-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-muted-foreground">
+        &copy; {{ new Date().getFullYear() }} Seth Sharp
+      </p>
 
-        <p class="text-sm my-auto leading-5 text-muted-foreground text-center md:text-left">
-          &copy; 2024 SethSharp
-        </p>
-      </div>
-
-      <div class="flex gap-4 justify-center text-muted-foreground">
-        <a class="hover:scale-105 hover:animate-pulse" href="https://github.com/SethSharp" target="_blank">
-          <IconsGitHub class="size-8 transition ease-in-out delay-0 duration-50"/>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/SethSharp" target="_blank" class="text-muted-foreground hover:text-foreground transition">
+          <Github class="size-5" />
         </a>
-
-        <a class="hover:scale-105 hover:animate-pulse" href="https://www.linkedin.com/in/seth-sharp/" target="_blank">
-          <IconsLinkedIn class="size-8 transition ease-in-out delay-0 duration-50"/>
+        <a href="https://www.linkedin.com/in/seth-sharp/" target="_blank" class="text-muted-foreground hover:text-foreground transition">
+          <Linkedin class="size-5" />
         </a>
-
-        <a class="hover:scale-105 hover:animate-pulse" href="https://x.com/seth_sharp_01" target="_blank">
-          <IconsTwitter class="size-8 transition ease-in-out delay-0 duration-50" />
+        <a href="https://x.com/seth_sharp_01" target="_blank" class="text-muted-foreground hover:text-foreground transition">
+          <Twitter class="size-5" />
         </a>
       </div>
     </div>
