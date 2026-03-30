@@ -12,11 +12,11 @@ useSeoMeta({
     </HeadingsPage>
 
     <BodyWrapper>
-      <p class="text-gray-300 my-6 max-w-96">
+      <p class="text-muted-foreground my-6 max-w-96">
         Please feel free to get in contact with one of the options below, I look forward to connecting with you!
       </p>
 
-      <div class="flex gap-4 text-slate-500">
+      <div class="flex gap-4 text-muted-foreground">
         <a class="hover:scale-105 hover:animate-pulse" href="https://github.com/SethSharp" target="_blank">
           <IconsGitHub class="size-8 transition ease-in-out delay-0 duration-50"/>
         </a>

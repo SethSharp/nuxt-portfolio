@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Separator } from "@sethsharp/lumuix"
+import { Separator } from "@codinglabsau/gooey"
 
 useSeoMeta({
   title: "Seth Sharp",
@@ -35,7 +35,7 @@ useSeoMeta({
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
         <HeadingsSecondary>About me</HeadingsSecondary>
-        <div class="leading-loose p-4 md:w-2/3 mx-auto text-gray-300 text-lg">
+        <div class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
           <p>
             I currently live on the Gold Coast and loving every moment. I love everything outdoors such as
             4WDing, camping or fishing. I also enjoy gaming from time to time to have a nice break from my busy life.
@@ -58,7 +58,7 @@ useSeoMeta({
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
         <HeadingsSecondary>My Specialisations</HeadingsSecondary>
-        <p class="leading-loose p-4 md:w-2/3 mx-auto text-gray-300 text-lg">
+        <p class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
           I have been a Junior Software Developer over the last couple of years specialising in Laravel development.
           I have developed skills in multiple libraries and frameworks to build custom web applications for clients.
         </p>
@@ -76,7 +76,7 @@ useSeoMeta({
     <BodyWrapper>
       <section class="py-12 md:py-24 text-center">
         <HeadingsSecondary>Aspiration</HeadingsSecondary>
-        <p class="leading-loose p-4 md:w-2/3 mx-auto text-gray-300 text-lg">
+        <p class="leading-loose p-4 md:w-2/3 mx-auto text-muted-foreground text-lg">
           One of my major aspirations is to start my own business. I am eager to leverage my skills and
           experience to create innovative solutions and build a successful venture.
         </p>

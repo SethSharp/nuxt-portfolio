@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Separator } from "@sethsharp/lumuix"
+import { Separator } from "@codinglabsau/gooey"
 
 useSeoMeta({
   title: 'Projects: Seth Sharp',

@@ -34,8 +34,8 @@ const links = computed(() => [
 </style>
 
 <template>
-  <div class="font-sans antialiased bg-gray-900">
-    <header class="sticky z-10 top-0 bg-gray-900">
+  <div class="font-sans antialiased bg-background text-foreground">
+    <header class="sticky z-10 top-0 bg-background">
       <NavigationBar :links="links" />
     </header>
 

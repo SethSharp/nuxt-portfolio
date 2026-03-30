@@ -59,9 +59,9 @@ useSeoMeta({
 
     <BodyWrapper>
       <div class="leading-loose mt-12">
-        <h1 class="text-2xl font-medium text-gray-400"> Bachelor of Computer Science (2020-2023) </h1>
+        <h1 class="text-2xl font-medium text-muted-foreground"> Bachelor of Computer Science (2020-2023) </h1>
 
-        <p class="mt-3 text-gray-300">
+        <p class="mt-3 text-foreground">
           Straight after high school I went to Griffith University to study Computer Science, majoring in
           Software Development.
           Here is where I learnt a lot about algorithms, data structures and project structures. I dipped my
@@ -74,15 +74,15 @@ useSeoMeta({
 
     <BodyWrapper>
       <div class="leading-loose mt-12">
-        <h1 class="text-2xl font-medium text-gray-400"> Coding Labs (2022-Present) </h1>
+        <h1 class="text-2xl font-medium text-muted-foreground"> Coding Labs (2022-Present) </h1>
 
-        <p class="mt-3 text-gray-300">
+        <p class="mt-3 text-foreground">
           Coding Labs is a Laravel agency based on the Gold Coast. I have been apart of this team for nearly 2
           years
           and have learn so much.
         </p>
       </div>
-      <div class="flow-root mt-6 text-gray-300">
+      <div class="flow-root mt-6 text-foreground">
         <ul role="list" class="-mb-8">
           <li v-for="event in timeline" class="flex flex-col">
             <div class="relative flex space-x-3 my-2">
@@ -90,13 +90,13 @@ useSeoMeta({
 
               <div class="md:flex min-w-0 flex-1 justify-between sm:space-x-4 pl-2">
                 <div>
-                  <p class="text-sm text-gray-200 pt-1">
+                  <p class="text-sm text-foreground pt-1">
                     {{ event.content }}
                     <span class="font-medium text-primary/90">
                       {{ event.target }}
                     </span>
                   </p>
-                  <p class="text-sm mt-4 text-gray-400">{{ event?.description }}</p>
+                  <p class="text-sm mt-4 text-muted-foreground">{{ event?.description }}</p>
                 </div>
 
                 <div class="whitespace-nowrap text-right text-sm text-primary">

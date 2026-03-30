@@ -14,11 +14,18 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [],
 
   css: [
-      '~/assets/css/main.css'
+    '~/assets/css/main.css',
   ],
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
   compatibilityDate: '2024-04-03',
 

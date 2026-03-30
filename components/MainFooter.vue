@@ -14,12 +14,12 @@ defineProps<{
           <NavigationResponsiveLink v-for="link in links" :link="link" />
         </div>
 
-        <p class="text-sm my-auto leading-5 text-gray-400 text-center md:text-left">
+        <p class="text-sm my-auto leading-5 text-muted-foreground text-center md:text-left">
           &copy; 2024 SethSharp
         </p>
       </div>
 
-      <div class="flex gap-4 justify-center text-slate-500">
+      <div class="flex gap-4 justify-center text-muted-foreground">
         <a class="hover:scale-105 hover:animate-pulse" href="https://github.com/SethSharp" target="_blank">
           <IconsGitHub class="size-8 transition ease-in-out delay-0 duration-50"/>
         </a>

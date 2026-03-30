@@ -1,11 +1,12 @@
-import { preset } from '@sethsharp/lumuix'
+import { preset } from '@codinglabsau/gooey/presets/v3'
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['class'],
   presets: [preset],
 
   content: [
-    "./node_modules/@sethsharp/lumuix/dist/*.js",
+    "./node_modules/@codinglabsau/gooey/{src,dist}/**/*.{js,vue}",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -37,4 +38,3 @@ export default {
 
   plugins: [],
 }
-
