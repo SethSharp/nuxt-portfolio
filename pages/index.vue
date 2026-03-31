@@ -7,6 +7,15 @@ import vueIcon from '~/assets/images/icons/vue-icon.png'
 import twIcon from '~/assets/images/icons/tw-icon.png'
 import lwIcon from '~/assets/images/icons/lw-icon.png'
 
+const { reveal } = useScrollReveal()
+
+const greeting = computed(() => {
+  const hour = new Date().getHours()
+  if (hour < 12) return "Good morning"
+  if (hour < 17) return "Good afternoon"
+  return "Good evening"
+})
+
 useSeoMeta({
   title: "Seth Sharp - Software Developer",
   description: "Software Developer based in Adelaide, building scalable web applications with Laravel, Vue, and AWS."
@@ -45,7 +54,7 @@ const highlights = [
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 space-y-6">
           <div>
-            <p class="text-primary font-mono text-sm mb-2">G'day, I'm</p>
+            <p class="text-primary font-mono text-sm mb-2">{{ greeting }}, I'm</p>
             <HeadingsMain>
               <h1>Seth Sharp</h1>
             </HeadingsMain>
@@ -93,7 +102,7 @@ const highlights = [
     <Separator />
 
     <!-- About -->
-    <section class="space-y-6">
+    <section :ref="reveal" class="space-y-6">
       <HeadingsSecondary>About</HeadingsSecondary>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
@@ -125,7 +134,7 @@ const highlights = [
     <Separator />
 
     <!-- Tech Stack -->
-    <section class="space-y-6">
+    <section :ref="reveal" class="space-y-6">
       <HeadingsSecondary>Stack</HeadingsSecondary>
       <div class="flex flex-wrap gap-6">
         <div
@@ -142,7 +151,7 @@ const highlights = [
     <Separator />
 
     <!-- Highlights -->
-    <section class="space-y-6">
+    <section :ref="reveal" class="space-y-6">
       <div class="flex items-center justify-between">
         <HeadingsSecondary>Highlights</HeadingsSecondary>
         <NuxtLink

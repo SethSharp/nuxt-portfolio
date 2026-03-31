@@ -2,6 +2,8 @@
 import { Separator } from "@codinglabsau/gooey"
 import { Briefcase, GraduationCap, Code } from "lucide-vue-next"
 
+const { reveal } = useScrollReveal()
+
 useSeoMeta({
   title: 'Experience - Seth Sharp',
   description: 'Over three years of professional experience building scalable web applications at Coding Labs and beyond.'
@@ -68,7 +70,7 @@ const roles = [
 
     <!-- Professional Experience -->
     <div class="space-y-16 mt-8">
-      <div v-for="role in roles" :key="role.company" class="space-y-6">
+      <div v-for="role in roles" :key="role.company" :ref="reveal" class="space-y-6">
         <div class="flex items-start gap-4">
           <div class="mt-1 p-2 rounded-lg bg-primary/10 text-primary">
             <component :is="role.icon" class="size-5" />
@@ -116,7 +118,7 @@ const roles = [
     <Separator />
 
     <!-- Education -->
-    <section class="space-y-6">
+    <section :ref="reveal" class="space-y-6">
       <div class="flex items-start gap-4">
         <div class="mt-1 p-2 rounded-lg bg-primary/10 text-primary">
           <GraduationCap class="size-5" />

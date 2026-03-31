@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Github, Linkedin, Twitter, MapPin } from "lucide-vue-next"
 
+const { reveal } = useScrollReveal()
+
 useSeoMeta({
   title: 'Contact - Seth Sharp',
   description: 'Get in touch with Seth Sharp - software developer based in Adelaide.'
@@ -37,7 +39,7 @@ const socials = [
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-6 max-w-2xl">
+    <div :ref="reveal" class="grid sm:grid-cols-2 gap-6 max-w-2xl">
       <div class="flex items-center gap-4 p-5 rounded-lg bg-card ring-1 ring-border">
         <div class="p-2 rounded-lg bg-primary/10 text-primary">
           <MapPin class="size-5" />

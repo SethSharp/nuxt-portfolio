@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ExternalLink, Github } from "lucide-vue-next"
 
+const { reveal } = useScrollReveal()
+
 import framedImage from '~/assets/images/projects/framed/home.png'
 import habitTrackerImage from '~/assets/images/projects/habit-tracker/dashboard.png'
 
@@ -60,6 +62,7 @@ const projects = [
       <div
         v-for="project in projects"
         :key="project.title"
+        :ref="reveal"
         class="group rounded-xl bg-card ring-1 ring-border hover:ring-primary/50 transition overflow-hidden"
       >
         <div class="flex flex-col lg:flex-row">
