@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import { Menu } from "lucide-vue-next"
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@codinglabsau/gooey"
+import { Menu, Search } from "lucide-vue-next"
+import { Kbd, Sheet, SheetClose, SheetContent, SheetTrigger } from "@codinglabsau/gooey"
 import { type Link } from "~/types"
 
 defineProps<{
   links: Link[]
 }>()
+
+const isMac = computed(() => {
+  if (import.meta.server) return true
+  return navigator.userAgent.includes('Mac')
+})
 </script>
 
 <template>
@@ -20,6 +25,13 @@ defineProps<{
 
     <div class="hidden sm:flex items-center gap-6">
       <NavigationLink v-for="link in links" :key="link.href" :link="link" />
+      <button
+        class="hidden sm:inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition px-2 py-1 rounded-md border border-border"
+        @click="$emit('openCommand')"
+      >
+        <Search class="size-3" />
+        <span class="font-mono">{{ isMac ? '⌘' : 'Ctrl+' }}K</span>
+      </button>
       <NavigationModeToggle />
     </div>
 

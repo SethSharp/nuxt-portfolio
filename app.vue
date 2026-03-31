@@ -4,6 +4,9 @@ import { useRoute } from "vue-router"
 
 useDark()
 
+const commandOpen = ref(false)
+provide('commandOpen', commandOpen)
+
 const route = useRoute()
 const currentRoute = computed(() => route.path)
 
@@ -35,7 +38,7 @@ const links = computed(() => [
   <div class="font-sans antialiased bg-background text-foreground min-h-screen">
     <header class="sticky z-10 top-0 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div class="max-w-5xl mx-auto">
-        <NavigationBar :links="links" />
+        <NavigationBar :links="links" @open-command="commandOpen = true" />
       </div>
     </header>
 
@@ -50,6 +53,7 @@ const links = computed(() => [
     </main>
 
     <MainFooter />
+    <CommandPalette />
   </div>
 </template>
 
