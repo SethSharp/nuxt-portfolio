@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: 'Sharp Odds',
-    description: 'A sports odds comparison platform that aggregates data from multiple bookmaker APIs into a normalised schema. Co-developing the data normalisation pipeline and independently managing architecture decisions, database design and infrastructure.',
+    description: 'A sports odds comparison platform that uses AI to aggregate and normalise raw, unstructured data from multiple bookmaker APIs into a structured schema for storage and comparison. Co-developing the data pipeline and independently managing architecture decisions, database design and infrastructure.',
     image: null,
     tags: ['Laravel', 'Vue', 'Inertia', 'API Integrations', 'PostgreSQL'],
     links: {
