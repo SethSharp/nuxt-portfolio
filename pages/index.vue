@@ -50,7 +50,7 @@ const highlights = [
               <h1>Seth Sharp</h1>
             </HeadingsMain>
             <p class="text-xl md:text-2xl text-muted-foreground font-light mt-4">
-              Software Developer
+              Software Developer | AI Developer
             </p>
           </div>
 
