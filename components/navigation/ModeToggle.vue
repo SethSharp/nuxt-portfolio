@@ -8,10 +8,22 @@ const toggleDark = useToggle(isDark)
 
 <template>
   <button
-    class="p-2 rounded-md text-muted-foreground hover:text-foreground transition"
+    class="relative p-2 rounded-md text-foreground hover:text-primary size-9"
     @click="toggleDark()"
   >
-    <Sun v-if="isDark" class="size-5" />
-    <Moon v-else class="size-5" />
+    <Sun
+      class="size-5 absolute inset-0 m-auto transition-all duration-500"
+      :style="{
+        transform: isDark ? 'rotate(0deg) scale(1)' : 'rotate(-90deg) scale(0)',
+        opacity: isDark ? 1 : 0,
+      }"
+    />
+    <Moon
+      class="size-5 absolute inset-0 m-auto transition-all duration-500"
+      :style="{
+        transform: isDark ? 'rotate(90deg) scale(0)' : 'rotate(0deg) scale(1)',
+        opacity: isDark ? 0 : 1,
+      }"
+    />
   </button>
 </template>
