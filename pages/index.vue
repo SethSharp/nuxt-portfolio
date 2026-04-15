@@ -28,6 +28,8 @@ const tech = [
   { name: 'Livewire', icon: lwIcon },
 ]
 
+const foundational = ['Java', 'Spring Boot', 'React', 'Docker', 'Kubernetes']
+
 const highlights = [
   {
     title: 'Live Event Streaming',
@@ -134,16 +136,37 @@ const highlights = [
     <Separator />
 
     <!-- Tech Stack -->
-    <section :ref="reveal" class="space-y-6">
+    <section :ref="reveal" class="space-y-8">
       <HeadingsSecondary>Stack</HeadingsSecondary>
-      <div class="flex flex-wrap gap-6">
-        <div
-          v-for="item in tech"
-          :key="item.name"
-          class="flex items-center gap-3 px-4 py-3 rounded-lg bg-card ring-1 ring-border hover:ring-primary/50 transition"
-        >
-          <img :src="item.icon" :alt="item.name" class="size-8" />
-          <span class="font-mono text-sm text-foreground">{{ item.name }}</span>
+
+      <div class="space-y-4">
+        <p class="text-sm text-muted-foreground">
+          My main stack - what I reach for day-to-day and ship production code with.
+        </p>
+        <div class="flex flex-wrap gap-6">
+          <div
+            v-for="item in tech"
+            :key="item.name"
+            class="flex items-center gap-3 px-4 py-3 rounded-lg bg-card ring-1 ring-border hover:ring-primary/50 transition"
+          >
+            <img :src="item.icon" :alt="item.name" class="size-8" />
+            <span class="font-mono text-sm text-foreground">{{ item.name }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-sm text-muted-foreground">
+          Foundational - areas I've worked in enough to be productive, but wouldn't claim as a core strength.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span
+            v-for="skill in foundational"
+            :key="skill"
+            class="text-xs font-mono px-3 py-1.5 rounded-md bg-primary/10 text-primary"
+          >
+            {{ skill }}
+          </span>
         </div>
       </div>
     </section>

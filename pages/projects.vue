@@ -19,6 +19,7 @@ const projects = [
     tags: ['Laravel', 'Tailwind', 'AWS', 'Route53', 'ACM'],
     links: {
       live: 'https://www.framedjustforyou.com.au',
+      github: 'https://github.com/SethSharp/FramedJustForYou',
     },
   },
   {
@@ -31,19 +32,30 @@ const projects = [
     },
   },
   {
+    title: 'Property Tracker',
+    description: 'An upskill project exploring the Java ecosystem - a Spring Boot backend paired with a React frontend for tracking and comparing property listings. Built to get hands-on with a stack outside my day-to-day PHP/Vue work.',
+    image: null,
+    tags: ['WIP', 'Java', 'Spring Boot', 'React'],
+    links: {
+      github: 'https://github.com/SethSharp/property-tracker',
+    },
+  },
+  {
+    title: 'Odds API',
+    description: 'A PHP package extracted from Sharp Odds that provides a unified interface for fetching and normalising bookmaker market data. Keeps integration logic reusable and testable outside the main application.',
+    image: null,
+    tags: ['PHP', 'Composer Package', 'API Integrations'],
+    links: {
+      github: 'https://github.com/SethSharp/odds-api',
+    },
+  },
+  {
     title: 'Habit Tracker',
     description: 'A full-stack habit tracking application built on the VILT stack. Create habits on weekly, daily or monthly schedules, view them in a week view for focus or a calendar view for the bigger picture. Includes filtering by type and completion status.',
     image: habitTrackerImage,
     tags: ['Vue', 'Inertia', 'Laravel', 'Tailwind', 'AWS'],
-    links: {},
-  },
-  {
-    title: 'Blog Package',
-    description: 'An open-source Laravel blog management package with a fully integrated TipTap editor, custom image upload system, SEO columns, and tag/collection support. Powers the blog on this portfolio.',
-    image: null,
-    tags: ['Laravel', 'Vue', 'TipTap', 'Composer Package'],
     links: {
-      github: 'https://github.com/SethSharp/BlogCrud',
+      github: 'https://github.com/SethSharp/HabitTracker',
     },
   },
 ]
