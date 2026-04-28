@@ -5,6 +5,8 @@ const { reveal } = useScrollReveal()
 
 import framedImage from '~/assets/images/projects/framed/home.png'
 import habitTrackerImage from '~/assets/images/projects/habit-tracker/dashboard.png'
+import quokkaImage from '~/assets/images/projects/quokka/home.png'
+import sharpOddsImage from '~/assets/images/projects/sharp-odds/home.png'
 
 useSeoMeta({
   title: 'Projects - Seth Sharp',
@@ -25,10 +27,19 @@ const projects = [
   {
     title: 'Sharp Odds',
     description: 'A sports odds comparison platform that uses AI to aggregate and normalise raw, unstructured data from multiple bookmaker APIs into a structured schema for storage and comparison. Co-developing the data pipeline and independently managing architecture decisions, database design and infrastructure.',
-    image: null,
-    tags: ['Laravel', 'Vue', 'Inertia', 'API Integrations', 'PostgreSQL'],
+    image: sharpOddsImage,
+    tags: ['Laravel', 'Vue', 'Inertia', 'API Integrations', 'PostgreSQL', 'SaaS'],
     links: {
       live: 'https://sharp-odds.com.au',
+    },
+  },
+  {
+    title: 'Quokka',
+    description: 'A passion project born from researching where to buy in Adelaide. Quokka pulls government open data — housing prices, crime rates, bushfire risk, schools, and ABS census data — and presents it side by side so first home buyers can compare suburbs without agents or subscriptions.',
+    image: quokkaImage,
+    tags: ['Laravel', 'Vue', 'Government Data', 'ABS'],
+    links: {
+      live: 'https://tryquokka.com',
     },
   },
   {
