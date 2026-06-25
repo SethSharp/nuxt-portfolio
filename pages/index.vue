@@ -18,7 +18,7 @@ const greeting = computed(() => {
 
 useSeoMeta({
   title: "Seth Sharp - Software Developer",
-  description: "Software Developer based in Adelaide, building scalable web applications with Laravel, Vue, and AWS."
+  description: "Software Developer based in Adelaide, building scalable web applications with Laravel & Vue."
 })
 
 const tech = [
@@ -66,9 +66,9 @@ const highlights = [
           </div>
 
           <p class="text-muted-foreground leading-relaxed max-w-lg">
-            Passionate about building web applications with Laravel, Vue, and AWS.
-            Currently developing real-time e-commerce and live event systems at
-            <span class="text-foreground font-medium">Coding Labs</span>.
+            Passionate about building web applications with Laravel & Vue.
+            Starting a new role with
+            <span class="text-foreground font-medium">JACK App</span>.
           </p>
 
           <div class="flex items-center gap-4 pt-2">

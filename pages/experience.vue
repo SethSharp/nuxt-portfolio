@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Briefcase, GraduationCap, Code } from "lucide-vue-next"
 import { Separator } from "@sethsharp/lumuix"
+import { Briefcase, GraduationCap, Code, HardHat } from "lucide-vue-next"
 
 const { reveal } = useScrollReveal()
 
@@ -11,10 +11,18 @@ useSeoMeta({
 
 const roles = [
   {
+    company: 'JACK App',
+    title: 'Software Developer',
+    period: 'June 2026 - Present',
+    location: 'Adelaide, SA',
+    icon: HardHat,
+    description: 'Starting a new role as a Software Developer',
+  },
+  {
     company: 'Coding Labs',
     title: 'Software Developer',
-    period: 'November 2022 - Present',
-    location: 'Adelaide, SA',
+    period: 'November 2022 - June 2026',
+    location: 'Gold Coast, QLD',
     icon: Briefcase,
     projects: [
       {
@@ -81,6 +89,9 @@ const roles = [
               {{ role.title }} &middot; {{ role.period }}
             </p>
             <p class="text-sm text-muted-foreground">{{ role.location }}</p>
+            <div>
+              {{ role.description }}
+            </div>
           </div>
         </div>
 
