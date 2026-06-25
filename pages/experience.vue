@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Separator } from "@codinglabsau/gooey"
 import { Briefcase, GraduationCap, Code } from "lucide-vue-next"
+import { Separator } from "@sethsharp/lumuix"
 
 const { reveal } = useScrollReveal()
 

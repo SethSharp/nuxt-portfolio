@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Github, Linkedin, ExternalLink } from "lucide-vue-next"
-import { Separator } from "@codinglabsau/gooey"
+import { Separator } from "@sethsharp/lumuix"
 
 import laravelIcon from '~/assets/images/icons/laravel-icon.png'
 import vueIcon from '~/assets/images/icons/vue-icon.png'

@@ -10,7 +10,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@codinglabsau/gooey"
+} from "@sethsharp/lumuix"
 
 const router = useRouter()
 const open = inject<Ref<boolean>>('commandOpen', ref(false))

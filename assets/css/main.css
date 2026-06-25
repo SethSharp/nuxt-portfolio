@@ -1,18 +1,13 @@
-@import '@codinglabsau/gooey/presets/slate.css';
-@import '@codinglabsau/gooey/style.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '@sethsharp/lumuix/dist/types/presets/slate.css';
 
 :root {
-  --primary: 142 76% 36%;
-  --primary-foreground: 355 7% 97%;
-  --ring: 142 76% 36%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 355 7% 97%;
+    --ring: 142 76% 36%;
 }
 
 .dark {
-  --primary: 142 69% 58%;
-  --primary-foreground: 144 61% 7%;
-  --ring: 142 69% 58%;
+    --primary: 142 69% 58%;
+    --primary-foreground: 144 61% 7%;
+    --ring: 142 69% 58%;
 }

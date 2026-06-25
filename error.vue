@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from '@codinglabsau/gooey'
+import { Button } from '@sethsharp/lumuix'
 
 const error = useError()
 const handleError = () => clearError({ redirect: '/' })

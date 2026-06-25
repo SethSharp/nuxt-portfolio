@@ -1,4 +1,4 @@
-import { preset } from '@codinglabsau/gooey/presets/v3'
+import { preset } from '@sethsharp/lumuix'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,7 +6,7 @@ export default {
   presets: [preset],
 
   content: [
-    "./node_modules/@codinglabsau/gooey/{src,dist}/**/*.{js,vue}",
+    "./node_modules/@sethsharp/lumuix/dist/*.js",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",

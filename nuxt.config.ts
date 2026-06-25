@@ -22,18 +22,11 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: [],
+  modules: ['@nuxtjs/tailwindcss'],
 
   css: [
     '~/assets/css/main.css',
   ],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
 
   compatibilityDate: '2024-04-03',
 
