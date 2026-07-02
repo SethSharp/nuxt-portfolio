@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from '@sethsharp/lumuix'
+import { Button } from '@/components/ui/button'
 
 const error = useError()
 const handleError = () => clearError({ redirect: '/' })
