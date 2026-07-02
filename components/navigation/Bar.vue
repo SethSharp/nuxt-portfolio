@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Menu, Search } from "lucide-vue-next"
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@sethsharp/lumuix"
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { type Link } from "~/types"
 
 defineProps<{

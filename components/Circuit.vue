@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute w-full min-h-24 object-cover h-screen overflow-hidden [mask-image:radial-gradient(55rem_35rem_at_center,white,transparent)] opacity-30 dark:opacity-20"
+    class="absolute w-full min-h-24 object-cover h-screen overflow-hidden mask-[radial-gradient(55rem_35rem_at_center,white,transparent)] opacity-30 dark:opacity-20"
   >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
       <path

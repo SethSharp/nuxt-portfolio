@@ -10,7 +10,7 @@ defineProps<{
   <NuxtLink
     :to="link.href"
     class="font-mono text-sm text-muted-foreground transition hover:text-foreground"
-    :class="{ '!text-primary font-medium': link.active }"
+    :class="{ 'text-primary! font-medium': link.active }"
   >
     {{ link.name }}
   </NuxtLink>

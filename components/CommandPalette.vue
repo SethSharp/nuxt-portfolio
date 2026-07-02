@@ -10,7 +10,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@sethsharp/lumuix"
+} from "@/components/ui/command"
 
 const router = useRouter()
 const open = inject<Ref<boolean>>('commandOpen', ref(false))
