@@ -1,13 +1,5 @@
-@import '@sethsharp/lumuix/dist/types/presets/slate.css';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "styles.css";
 
-:root {
-    --primary: 142 76% 36%;
-    --primary-foreground: 355 7% 97%;
-    --ring: 142 76% 36%;
-}
-
-.dark {
-    --primary: 142 69% 58%;
-    --primary-foreground: 144 61% 7%;
-    --ring: 142 69% 58%;
-}
+@config "../../tailwind.config.js";

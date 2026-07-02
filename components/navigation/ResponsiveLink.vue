@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <a :href="link.href"
-     class="font-normal font-mono text-muted-foreground transition hover:text-foreground" :class="{'!text-primary' : link.active}">
+     class="font-normal font-mono text-muted-foreground transition hover:text-foreground" :class="{'text-primary!' : link.active}">
     {{ link.name }}
   </a>
 </template>
