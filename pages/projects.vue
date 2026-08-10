@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: 'Quokka',
-    description: 'A passion project born from researching where to buy in Adelaide. Quokka pulls government open data — housing prices, crime rates, bushfire risk, schools, and ABS census data — and presents it side by side so first home buyers can compare suburbs without agents or subscriptions.',
+    description: 'A passion project born from researching where to buy in Adelaide. Quokka pulls government open data - housing prices, crime rates, bushfire risk, schools, and ABS census data - and presents it side by side so first home buyers can compare suburbs without agents or subscriptions.',
     image: quokkaImage,
     tags: ['Laravel', 'Vue', 'Government Data', 'ABS'],
     links: {

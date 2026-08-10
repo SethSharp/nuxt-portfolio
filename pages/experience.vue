@@ -16,7 +16,7 @@ const roles = [
     period: 'June 2026 - Present',
     location: 'Adelaide, SA',
     icon: HardHat,
-    description: 'Starting a new role as a Software Developer',
+    description: 'Software Developer at JACK, contributing to the development of a software management tool for the construction industry. Focused on elevating front-end practices and standards while onboarding into the existing codebase, architecture, and product workflows.',
   },
   {
     company: 'Coding Labs',
@@ -54,7 +54,7 @@ const roles = [
     company: 'Framed Just For You',
     title: 'Lead Developer',
     period: 'June 2023 - Present',
-    location: 'Remote',
+    location: 'Hybrid',
     icon: Code,
     projects: [
       {
