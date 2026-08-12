@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { MoveRight } from 'lucide-vue-next'
 
 const services = ref([
   {
@@ -68,13 +69,23 @@ const services = ref([
         </div>
       </div>
 
-      <div class="px-8 border-t border-line/40 pt-10">
+      <div class="px-8 border-t border-line/40 pt-10 text-center">
         <p class="leading-loose text-muted-foreground">
           I work with clients to understand their goals and design tailored solutions, develop
-          high quality web experiences and deliver reliable ongoing support - with a focus on
+          high quality web experiences and deliver reliable ongoing support — with a focus on
           <span class="text-paper font-semibold">scalable solutions that improve customer engagement
           and business outcomes</span>.
         </p>
+
+        <div class="w-full flex justify-center">
+          <RouterLink
+              to="/contact"
+              class="mt-6 inline-flex items-center gap-2 rounded-lg border border-line px-5 py-3 font-mono text-xs uppercase tracking-widest text-paper hover:bg-line/10 hover:border-paper/40 transition-colors"
+          >
+            Get in touch
+            <MoveRight class="size-4" />
+          </RouterLink>
+        </div>
       </div>
     </div>
   </div>
