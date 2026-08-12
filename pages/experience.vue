@@ -134,7 +134,7 @@ const roles = [
         <div class="mt-1 p-2 rounded-lg bg-primary/10 text-primary">
           <GraduationCap class="size-5" />
         </div>
-        <HeadingsSecondary>Education</HeadingsSecondary>
+        <h2 class="text-xl font-semibold text-foreground">Education</h2>
       </div>
       <div class="ml-14">
         <div class="p-6 rounded-lg bg-card ring-1 ring-border space-y-2">
