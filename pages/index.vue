@@ -67,7 +67,7 @@ const highlights = [
 
           <p class="text-muted-foreground leading-relaxed max-w-lg">
             Passionate about building web applications with Laravel & Vue.
-            Starting a new role with
+            Software Developer at
             <span class="text-foreground font-medium">JACK App</span>.
           </p>
 
@@ -109,12 +109,12 @@ const highlights = [
       <div class="grid md:grid-cols-3 gap-8">
         <div class="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            I'm a software developer with over three years of professional experience designing, building
+            I'm a software developer with over four years of professional experience designing, building
             and maintaining scalable web applications. I work across the full development lifecycle - from
             architecture and implementation through to testing, deployment, and production support.
           </p>
           <p>
-            Outside of work, I'm into 4WDing, camping, and fishing. I also build side projects to test
+            Outside of work, I'm into 4WDing, camping, and brewing my own beer. I also build side projects to test
             new ideas and keep learning - it's how I stay sharp.
           </p>
         </div>
