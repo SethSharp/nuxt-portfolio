@@ -1,57 +1,38 @@
 <script setup>
-import { ref } from 'vue'
-import { MoveRight } from 'lucide-vue-next'
+import { MoveUpRight } from 'lucide-vue-next'
 
-const services = ref([
-  {
-    title: 'Website design',
-    copy: 'Interfaces planned around how your customers actually move through a site - clear hierarchy, considered layout, nothing decorative for its own sake.',
-  },
-  {
-    title: 'Custom development',
-    copy: 'Hand-built front and back end work when off-the-shelf themes and plugins run out of road - tailored to how your business actually operates.',
-  },
-  {
-    title: 'Optimisation',
-    copy: 'Speed, accessibility and search performance treated as structural, not cosmetic - the parts of a site most visitors never see but always feel.',
-  },
-  {
-    title: 'Technical consulting',
-    copy: 'An outside read on your current stack, hosting and roadmap - practical advice on what to fix, keep, or leave alone.',
-  },
-])
+const mindwebUrl = 'https://mindweb-au.laravel.cloud'
 </script>
 
 <template>
   <div class="space-y-12">
     <div>
       <HeadingsPage>Services</HeadingsPage>
-      <HeadingsSecondary>Web Development - Sole Trader</HeadingsSecondary>
+      <HeadingsSecondary>Mindweb - Website care for small businesses</HeadingsSecondary>
     </div>
 
     <div class="space-y-16">
       <div class="px-8 max-w-3xl">
         <p class="font-display text-2xl md:text-3xl leading-snug text-paper">
-          I help businesses establish and grow their online presence through
-          <span class="font-semibold">modern, responsive, user-focused</span> websites.
+          Your website, <span class="font-semibold">looked after.</span>
         </p>
       </div>
 
-      <div class="px-8">
-        <p class="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">
-          What's included
+      <div class="px-8 max-w-3xl space-y-5">
+        <p class="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+          What is Mindweb
         </p>
-        <div class="grid sm:grid-cols-2 gap-px bg-line/40 border border-line/40 rounded-lg overflow-hidden">
-          <div
-              v-for="(s, i) in services"
-              :key="s.title"
-              class="bg-background p-6 md:p-8 hover:bg-line/10 transition-colors"
-          >
-            <p class="font-mono text-xs text-muted-foreground mb-3">{{ String(i + 1).padStart(2, '0') }}</p>
-            <h3 class="font-display text-xl font-semibold text-paper mb-2">{{ s.title }}</h3>
-            <p class="text-muted-foreground text-sm leading-relaxed">{{ s.copy }}</p>
-          </div>
-        </div>
+        <p class="leading-loose text-muted-foreground">
+          Mindweb is how I look after websites for small businesses. I host, fix and update your
+          website for a flat monthly fee, so it keeps working while you get on with running your
+          business. Hosting, backups, security and monitoring are handled, and if you need a change,
+          you email me and it gets done, fast.
+        </p>
+        <p class="leading-loose text-muted-foreground">
+          Plans are <span class="text-paper">month to month with no lock-in</span>, your domain stays
+          in your name, and you deal with me directly, not a support queue. Older WordPress, Wix and
+          Squarespace sites are rebuilt as fast, simple sites with nothing to keep updating.
+        </p>
       </div>
 
       <div class="px-8">
@@ -70,21 +51,23 @@ const services = ref([
       </div>
 
       <div class="px-8 border-t border-line/40 pt-10 text-center">
-        <p class="leading-loose text-muted-foreground">
-          I work with clients to understand their goals and design tailored solutions, develop
-          high quality web experiences and deliver reliable ongoing support — with a focus on
-          <span class="text-paper font-semibold">scalable solutions that improve customer engagement
-          and business outcomes</span>.
+        <p class="font-display text-xl md:text-2xl leading-snug text-paper">
+          Find out how your website is really doing.
+        </p>
+        <p class="mt-3 leading-loose text-muted-foreground">
+          Request a free website check at Mindweb. No obligation, and no sales calls.
         </p>
 
         <div class="w-full flex justify-center">
-          <RouterLink
-              to="/contact"
+          <a
+              :href="mindwebUrl"
+              target="_blank"
+              rel="noopener"
               class="mt-6 inline-flex items-center gap-2 rounded-lg border border-line px-5 py-3 font-mono text-xs uppercase tracking-widest text-paper hover:bg-line/10 hover:border-paper/40 transition-colors"
           >
-            Get in touch
-            <MoveRight class="size-4" />
-          </RouterLink>
+            Visit Mindweb
+            <MoveUpRight class="size-4" />
+          </a>
         </div>
       </div>
     </div>
